@@ -3,6 +3,7 @@
 <button (click)="addName()">Add name</button>
 
 <ul>
+<li *ngIf="names.length === 0">No hay nombres</li>
 <li *ngFor="let name of names; index as i">
    {{  i  }}  {{  name  }}"
    <button (click)="deleteName(i)">Delete</button>
