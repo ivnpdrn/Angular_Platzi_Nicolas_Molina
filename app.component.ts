@@ -18,6 +18,6 @@ export class AppComponent {
   }
 
   toggleButton() {
-    this.btnDisabled = false;
+    this.btnDisabled = !this.btnDisabled;
       }
 }
