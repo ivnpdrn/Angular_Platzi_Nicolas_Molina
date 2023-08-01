@@ -18,7 +18,7 @@ export class AppComponent {
   }
 
   names: string[] = ['Nico', 'Juli', 'Santi'];
-
+  newName = '';
 
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
@@ -38,7 +38,9 @@ export class AppComponent {
     const element = event.target as HTMLInputElement;
     element.value;
     this.person.name = element.value
+  }
 
-
+  addName ()  {
+    this.names.push(this.newName);
   }
 }
