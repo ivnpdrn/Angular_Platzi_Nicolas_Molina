@@ -44,4 +44,8 @@ export class AppComponent {
     this.names.push(this.newName);
     this.newName = '';
   }
+
+  deleteName(index: number) {
+    this.names.splice(index, 1);
+  }
 }
