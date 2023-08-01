@@ -12,7 +12,7 @@ export class AppComponent {
   btnDisabled = true;
 
   person={
-    name: 'Ncolas',
+    name: 'Nicolas',
     age: 18,
     avatar: 'https://www.w3schools.com/howto/img_avatar.png'
   }
