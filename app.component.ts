@@ -42,5 +42,6 @@ export class AppComponent {
 
   addName ()  {
     this.names.push(this.newName);
+    this.newName = '';
   }
 }
