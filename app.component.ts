@@ -16,4 +16,8 @@ export class AppComponent {
     age: 18,
     avatar: 'https://www.w3schools.com/howto/img_avatar.png'
   }
+
+  toggleButton() {
+    this.btnDisabled = false;
+      }
 }
