@@ -5,6 +5,7 @@
 <ul>
 <li *ngFor="let name of names; index as i">
    {{  i  }}  {{  name  }}"
+   <button (click)="deleteName(i)">Delete</button>
    </li>
 </ul>
 
