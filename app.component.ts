@@ -17,6 +17,9 @@ export class AppComponent {
     avatar: 'https://www.w3schools.com/howto/img_avatar.png'
   }
 
+  names: string[] = ['Nico', 'Juli', 'Santi'];
+
+
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
       }
