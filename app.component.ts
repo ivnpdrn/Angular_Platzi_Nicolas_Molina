@@ -10,4 +10,10 @@ export class AppComponent {
   age = 18;
   img = 'https://www.w3schools.com/howto/img_avatar.png';
   btnDisabled = true;
+
+  person={
+    name: 'Ncolas',
+    age: 18,
+    avatar: 'https://www.w3schools.com/howto/img_avatar.png'
+  }
 }
