@@ -1,6 +1,9 @@
 
 import { Component } from '@angular/core';
 
+import { Product } from './product.models';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,7 +24,7 @@ export class AppComponent {
   names: string[] = ['Nico', 'Juli', 'Santi'];
   newName = '';
 
-  products = [
+  products: Product[] = [
     {
     name: 'El mejor juguete',
     price: 565,
@@ -42,7 +45,7 @@ export class AppComponent {
 
     {
     name: 'Mis libros',
-    prices: 23,
+    price: 23,
     image: './assets/images/books.jpg'
     },
     {
