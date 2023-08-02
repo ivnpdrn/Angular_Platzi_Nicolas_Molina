@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -19,6 +20,43 @@ export class AppComponent {
 
   names: string[] = ['Nico', 'Juli', 'Santi'];
   newName = '';
+
+  products = [
+    {
+    name: 'El mejor juguete',
+    price: 565,
+    image: './assets/images/toy.jpg'
+    },
+
+    {
+    name: 'Bicicleta casi nueva',
+    price: 356,
+    image: './assets/images/bike.jpg'
+    },
+
+    {
+    name: 'Collection de albumnes',
+    price: 34,
+    image: './assets/images/album.jpg'
+    },
+
+    {
+    name: 'Mis libros',
+    prices: 23,
+    image: './assets/images/books.jpg'
+    },
+    {
+    name: 'Casa para perro',
+    price: 34,
+    image: './assets/images/house.jpg'
+    },
+    {
+    name: 'Gafas',
+    price: 3434,
+    image: './assets/images/glasses.jpg'
+    }
+  ]
+
 
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
@@ -48,4 +86,7 @@ export class AppComponent {
   deleteName(index: number) {
     this.names.splice(index, 1);
   }
+
+
+
 }
