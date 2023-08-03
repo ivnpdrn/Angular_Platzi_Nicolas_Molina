@@ -4,6 +4,12 @@
   El campo es requerido
 </p>
 
+<label>Nombre</label>
+<input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name"/>
+<p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal' ">Texto texto texto </p> <!-- change of style as CSS in line -->
+
+
+
 <hr/>
 
 <h1>ngSwitch</h1>
