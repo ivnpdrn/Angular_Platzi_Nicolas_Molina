@@ -1,3 +1,11 @@
+<h1>Class & Style</h1>
+<input type="text" required #nameInput2="ngModel" [(ngModel)]="person.name"/>
+<p class="message-error" [class.invalid]="nameInput2.invalid"> <!-- true if nameInput2 is invalid then the class in going to be active-->
+  El campo es requerido
+</p>
+
+<hr/>
+
 <h1>ngSwitch</h1>
 <input type="text" required [(ngModel)]="person.name" />
 
