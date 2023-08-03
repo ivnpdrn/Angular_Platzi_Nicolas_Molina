@@ -37,7 +37,7 @@
 <h1>*ngFor Objs</h1>
 <div class="product--grid">
 <div *ngFor = "let product of products">
-  <img width="250" [src] ="product.image" alt="image not available">
+  <img [src] ="product.image" alt="image not available">
   <h2>{{product.price}}</h2>
   <p>{{product.name}}</p>
 </div>
