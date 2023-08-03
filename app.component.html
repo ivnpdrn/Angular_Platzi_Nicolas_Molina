@@ -7,6 +7,20 @@
 <label>Nombre</label>
 <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name"/>
 <p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal' ">Texto texto texto </p> <!-- change of style as CSS in line -->
+<div>
+  <div>
+
+    <input type="text" [(ngModel)]="widthImg"/>
+
+  </div>
+
+  <div>
+
+    <img [style.width.px]="widthImg" [src]="person.avatar">
+
+  </div>
+</div>
+
 
 
 
