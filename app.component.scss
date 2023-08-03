@@ -6,17 +6,34 @@
 }
 
 .product--grid {
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-gap: 15px;
 
+  /* mobile first: focus on mobile then expand to another kind of devices */
+
+  display: flex;
+  flex-direction: column;
   div {
     img {
-    width: 100%;
-    border-radius: 10px;
+      width: 100%;
+      border-radius: 10px;
     }
     h2, p {
       margin: 0;
     }
   }
 }
+
+/* second to do: focus on another kind of devices */
+
+@media screen and (min-width: 40em)  { /* 40em the minimum size is tablet, this works like "if" in CSS */
+  .product--grid  {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 15px;
+  }
+}
+
+
+
+
+
+
