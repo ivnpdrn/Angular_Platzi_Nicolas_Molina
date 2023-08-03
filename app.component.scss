@@ -34,6 +34,12 @@
 
 }
 
+.styles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
 /* second to do: focus on another kind of devices */
 
 @media screen and (min-width: 40em)  { /* 40em the minimum size is tablet, this works like "if" in CSS */
