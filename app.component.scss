@@ -22,6 +22,18 @@
   }
 }
 
+.message-error {         /* default style for message */
+   background: red;
+   color: white;
+   opacity: 0;
+   transition: all linear .5s;
+   &.invalid {
+   opacity: 1
+
+   }
+
+}
+
 /* second to do: focus on another kind of devices */
 
 @media screen and (min-width: 40em)  { /* 40em the minimum size is tablet, this works like "if" in CSS */
