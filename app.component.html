@@ -31,16 +31,17 @@
 <p *ngIf="person.name === 'camilo'">
   La persona es Camilo
 </p>
+</div>-->
 
 
 <h1>*ngFor Objs</h1>
-<div>
+<div class="product--grid">
 <div *ngFor = "let product of products">
   <img width="250" [src] ="product.image" alt="image not available">
   <h2>{{product.price}}</h2>
   <p>{{product.name}}</p>
 </div>
-</div>-->
+
 
 
 <hr/>
