@@ -19,6 +19,8 @@ export class AppComponent {
   img = 'https://www.w3schools.com/howto/img_avatar.png';
   btnDisabled = true;
 
+  /*to get data of the form*/
+
   register = {
     name: '',
     email: '',
@@ -108,6 +110,10 @@ export class AppComponent {
 
   deleteName(index: number) {
     this.names.splice(index, 1);
+  }
+
+  onRegister ()  {
+    console.log(this.register);
   }
 
 
