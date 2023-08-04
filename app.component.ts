@@ -9,7 +9,11 @@ import { Product } from './product.models';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
+
+  widthImg = 10; /* new variable to be used by HTML */
+
   name = 'Nicolas';
   age = 18;
   img = 'https://www.w3schools.com/howto/img_avatar.png';
@@ -23,6 +27,12 @@ export class AppComponent {
 
   names: string[] = ['Nico', 'Juli', 'Santi'];
   newName = '';
+
+  box = {
+    width: 100,
+    Height: 100,
+    background: 'red'
+  }
 
   products: Product[] = [
     {
@@ -49,11 +59,13 @@ export class AppComponent {
     price: 23,
     image: './assets/images/books.jpg'
     },
+
     {
     name: 'Casa para perro',
     price: 34,
     image: './assets/images/house.jpg'
     },
+
     {
     name: 'Gafas',
     price: 3434,
